@@ -1,0 +1,351 @@
+
+
+:root {
+    --font-text: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --color-text: #fff;
+    --back-color: #409B45;
+  }
+
+.page {
+    /* text-align: center;
+    background-color: #CBE3C7;
+    padding-bottom: 4px;
+    margin-left: 10%;
+    margin-right: 10%; */
+    
+        background-color: white;
+        position: relative;
+        margin: auto;
+        max-width: 1310px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        height: 2950px;
+      
+}
+
+.head {
+    width: 1310px;
+    height: 86px;
+    background-color: var(--back-color);
+    position: relative;
+    display: flex;   
+    justify-content: space-between;
+}
+
+.danhmuc {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--font-text);
+    margin-bottom: 8px;
+}
+
+.sort-filter {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+    margin-top: 24px;
+    margin-right: 20px;
+}
+
+.sort-button {
+    height: 52px;
+    width: 200px;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: #fff;
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-content {
+    display: none;
+    position: absolute;
+    z-index: 1; 
+}
+
+.sort-content a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    background-color: #282a35;
+    font-family: var(--font-text);
+    font-weight: 200;
+    font-size: 18px;
+    padding: 8px;
+    width: 204px;
+}
+
+.sort-content a:hover {background-color: #fff; color: #000000; font-weight: 400;}
+.sort-filter:hover .sort-content {
+    display: block;
+}
+
+.body {
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+    height: 800px;
+}
+
+.body-l {
+    position: relative;
+    background-color: #282a35;
+    font-weight: 600;
+    color: #fff;
+    font-size: 20px;
+    width: 520px;
+    cursor: pointer;
+}
+
+.body-l p {
+    padding: 28px 16px;
+    margin: auto;
+}
+
+.body-l p:hover {background-color: white; color: black;}
+
+.body-r {
+    margin-top: 0px;
+}
+
+.gallery img {
+    height: 320px;
+    width: 296px;
+    margin-bottom: 8px;
+    transition: 0.5s;
+    border: 16px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+div.gallery {
+    float: left;
+    margin-left: 44px;
+    margin-right: 4px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div.desc a {
+    text-decoration: none;
+    color: black;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.gallery:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-timing-function: ease-in-out;
+}
+
+.gallery img:hover {
+    border: 16px solid #282a35;
+}
+
+.desc a:hover {
+    color: #d83c3c;
+    cursor: pointer;
+}
+
+.Main3 {
+    width: 1310px;
+    position: relative;
+}
+  
+.line-title {
+    height: 60px;
+    background-color: #409B45;
+    position: relative;
+}
+  
+.history-title {
+    background-color: black;
+    width: 240px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px;
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-size: 24px;
+    font-weight: bold;
+  
+}
+  
+.main3-dsvh {
+    display: flex;
+    width: 1310px;
+    height: auto;
+    margin-top: 12px;
+    padding: 64px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.box3 {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #409B45;
+    margin-bottom: 64px;
+    color: var(--color-text);
+    font-family: var(--font-text);
+    font-weight: bold;
+    font-size: 28px;
+    justify-content: end;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+  
+.text-dsvh {  
+    position: relative;
+    margin-left: 30px;
+    margin-bottom: 12px;
+    width: 900px;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+  
+.box-dsvh-1 {
+  background-image: linear-gradient(360deg, rgba(25, 26, 25, 2.9) 26.13%, rgba(217, 217, 217, 0) 111.65%), url(cattien.jpg);
+}
+
+.box-dsvh-2 {
+  background-image: linear-gradient(360deg, rgba(25, 26, 25, 2.9) 26.13%, rgba(217, 217, 217, 0) 111.65%), url(congchieng.jpg);
+}
+
+.box-dsvh-3 {
+  background-image: linear-gradient(360deg, rgba(25, 26, 25, 2.9) 26.13%, rgba(217, 217, 217, 0) 111.65%), url(domaine.jpg);
+  margin-bottom: 0px;
+}
+
+.box3:hover {
+  transform: scale(1.05);
+  transition-timing-function: ease-in-out;
+}
+
+.button-vm {
+  position: relative;
+  margin-top: 120px;
+  height: 60px;
+  width: 240px;
+  background-color: #409B45;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.button-vm a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: var(--font-text);
+  font-size: 24px;
+}
+
+.button-vm:hover {
+  background-color: black;
+}
+.scroll-container{
+    padding-top: 40px;
+}
+.Slide{
+    max-width: 1310px;
+    
+    /* margin: auto; */
+}
+.containerr{
+    max-height: 300px;
+}
+.Slide .title {
+    
+    background-color: #409B45;
+    /* align-items: center; */
+}
+.Slide .title p {
+    width: 200px;
+    height: 30px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.Slide .slide-content{
+    width: 1310px;
+    display: flex;
+    background: #D9D9D9;
+    overflow-x: auto;
+    transition: all 1s ease;
+
+}
+
+.slide-content .cards {
+    display: flex;
+}
+
+.slide-content .cards .card{
+    padding: 0 60px;
+}
+.card-image {
+    
+    height: 200px;
+    width: 320px;
+    
+}
+.card-image .card-img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 17px;
+}
+.slide-container{
+    min-height: 230px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background: #D9D9D9;
+    transition: all 0.5s ease;
+}
+.card-content{
+    padding-top: 8px;
+    color: white;
+    background-color: black;
+}
+.Footer{
+    padding-left: 70px;
+}
+.news-update{
+    padding-top: 40px;
+}

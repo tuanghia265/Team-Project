@@ -1,0 +1,48 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1200px;
+}
+
+.display{
+    overflow: hidden;
+    height: 850px;
+    width: 1080;
+    margin: 16px;
+}
+.wrap{
+    width: 400%;
+    animation: slideshow 8s infinite;
+}
+.image{
+    float: left;
+    /* height: 750px; */
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.image img{
+    height: 850px;
+    object-fit: cover;
+}
+@keyframes slideshow {
+    20%{margin-left: 0;}  
+    30%{margin-left: -100%;}
+    40%{margin-left: -100%;}  
+    50%{margin-left: -200%;}
+    60%{margin-left: -200%;}
+    70%{margin-left: -300%;}
+    80%{margin-left: -300%;}
+     
+}
+
+.image .p{
+    position: absolute;
+    right: 75px;
+    width: 2px;
+}

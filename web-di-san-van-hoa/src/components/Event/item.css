@@ -1,0 +1,19 @@
+.big-box {
+    display: flex;
+    align-items: center;
+    width: 345px;
+    height: 187px;
+    background-color: rgb(53, 100, 0);
+    margin: 20px;
+    margin-left: 80px;
+}
+
+.text {
+    height: 50px;
+}
+
+.ctn-box {
+    width: 300px;
+    height: 180px;
+    z-index: 3;
+}
